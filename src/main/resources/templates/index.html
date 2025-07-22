@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/style.css}">
+</head>
+<body>
+<div class="todo-container">
+    <!-- Title -->
+    <div class="title">BoostBoard 📝</div>
+
+    <!-- Add Task Form -->
+    <form action="/add" method="post" class="add-form">
+        <input type="text" name="task" placeholder="Enter a task" required />
+        <button type="submit" class="add-btn">Add</button>
+    </form>
+
+    <!-- Task List -->
+    <ul class="task-list">
+        <li th:each="todo : ${todos}" class="task-item">
+			<form th:action="@{'/toggle/' + ${todo.id}}" method="post">
+			                    <button class="complete-btn" type="submit" title="Mark Complete">✔️</button>
+			                </form>
+            <span th:text="${todo.task}" th:classappend="${todo.completed} ? 'completed' : ''"></span>
+            <div class="task-actions-inline">
+            
+                <form th:action="@{'/delete/' + ${todo.id}}" method="post">
+                    <button class="delete-btn" type="submit" title="Delete Task">❌</button>
+                </form>
+            </div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

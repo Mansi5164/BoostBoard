@@ -1,0 +1,115 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, rgb(97, 2, 104), rgb(43, 31, 107));
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.todo-container {
+    background: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 24px;
+    text-align: left;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.add-form {
+    display: flex;
+    justify-content: space-between;
+    background: #f1f1f1;
+    border-radius: 50px;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+.add-form input[type="text"] {
+    border: none;
+    background: transparent;
+    padding: 10px 15px;
+    font-size: 16px;
+    flex: 1;
+    outline: none;
+    border-radius: 50px;
+}
+
+.add-btn {
+    border: none;
+    background-color: rgb(97, 2, 104);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+    background-color: rgb(163, 3, 175);
+}
+
+.task-list {
+	font-weight: bold;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #fafafa;
+}
+
+.task-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.task-left input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #ff5c5c;
+    cursor: pointer;
+}
+
+.task-left span {
+    font-size: 16px;
+    color: #333;
+    word-break: break-word;
+}
+
+.task-right button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ff5c5c;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #bbb;
+}
+.task-actions-inline{
+	display: flex;
+	gap:10px;
+}
