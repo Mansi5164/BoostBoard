@@ -16,17 +16,25 @@ This project allows users to:
 All tasks are persisted in a MySQL (or H2) database using Spring Data JPA.
 
 🔧 Tech Stack
-# Java 17+
-# Spring Boot
-# Spring MVC
-# Spring Data JPA
-# Thymeleaf
-# HTML/CSS
+Java 17+
+
+Spring Boot
+
+Spring MVC
+
+Spring Data JPA
+
+Thymeleaf
+
+HTML/CSS
 
 
 📌 Features
-# Clean, modern UI with gradient backgrounds
-# Add, complete, and delete tasks
-# All buttons aligned for user-friendly interaction
-# Tasks stored and retrieved from the database
+Clean, modern UI with gradient backgrounds
+
+Add, complete, and delete tasks
+
+All buttons aligned for user-friendly interaction
+
+Tasks stored and retrieved from the database
 
